@@ -1,0 +1,5 @@
+x=int(input())
+y=int(input())
+z=int(input())
+R=(5*x+10*y)//z
+print("{:.0f}".format(R))
