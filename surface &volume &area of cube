@@ -1,0 +1,4 @@
+s=int(input())
+S=6*s*s
+A=s*s*s
+print("Surface area = %d and Volume = %d"%(S,A))
