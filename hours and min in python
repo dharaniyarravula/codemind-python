@@ -1,0 +1,4 @@
+min=float(input())
+h=min/60
+m=min%60
+print("%d Hour(s) %d Minute(s)"%(h,m))
