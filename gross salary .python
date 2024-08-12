@@ -1,0 +1,8 @@
+s=float(input())
+HRA=float(input())
+DA=float(input())
+pf=s*0.12
+GS=(s+HRA+DA+pf)
+print("{:.2f}".format(pf))
+print("{:.2f}".format(GS))
+
