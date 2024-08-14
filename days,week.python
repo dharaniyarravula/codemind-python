@@ -1,0 +1,8 @@
+#y=int(input())
+d=int(input())
+#W=int(input())
+y=d//365
+d=d%365
+w=d//7
+print(round(y,0))
+print(round(w,0))
