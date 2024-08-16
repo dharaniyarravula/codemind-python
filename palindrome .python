@@ -1,0 +1,50 @@
+5) Program to find the given String is Palindrome or not.
+Input:
+malayalam
+Output:
+It is Palindrome
+
+Code:
+import java.util.Scanner;
+public class PalindromeorNot
+{
+  public static boolean isPalindrome(String s)
+  {
+      String temp="";
+      char ch;
+      for(int i=0;i<s.length();i++)
+      {
+	      ch=s.charAt(i);
+		  temp=ch+temp;
+      }
+      System.out.println("Reverse of the word: "+temp);
+	  if(temp.equals(s))
+	     return true;
+	  else 
+	     return false;
+	    
+      	  
+  }
+  public static void main(String args[])
+  {
+     Scanner sc=new Scanner(System.in);
+	 String str=sc.nextLine();
+	 
+	 if(isPalindrome(str))
+	 {
+	    System.out.println(str+" is a Palindrome");
+	 }
+	 else
+	   System.out.println(str+" is not a Palindrome");
+  }
+}
+
+D:\2024-25\SkillupCoder_Java_2027\Lab>java PalindromeorNot
+malayalam
+Reverse of the word: malayalam
+malayalam is a Palindrome
+
+D:\2024-25\SkillupCoder_Java_2027\Lab>java PalindromeorNot
+srinu
+Reverse of the word: unirs
+srinu is not a Palindrome
