@@ -1,0 +1,46 @@
+3) Write a program which reads a set of Strings into an array and then print 
+   the strings which contains more number of "vowels".
+import java.util.Scanner;
+  public class FindMaxVowelWord
+  {
+    public static int findVowelCount(String s)   
+	{
+	    String vowels="AEIOUaeiou";
+		
+		char ch;
+		int count=0;
+		for(int i=0;i<s.length();i++)
+		{
+		   ch=s.charAt(i);
+		   if(vowels.contains(ch+""))
+		       count++;
+		}
+		return count;
+	}
+  
+    public static void main(String args[])
+	{
+	  Scanner sc=new Scanner(System.in);
+	  String str=sc.nextLine();
+	  
+	  String words[]=str.split(" ");
+	  int max_count=0;
+	  String temp="";
+	  for(int i=0;i<words.length;i++)
+	  {
+	      int v_count=FindMaxVowelWord.findVowelCount(words[i]);
+		  //System.out.println(words[i]+" - "+v_count);
+		  if(v_count >max_count)
+		  {
+		     max_count=v_count;
+			 temp=words[i];
+		  }
+		  
+	  }
+	  System.out.println(temp);
+	}
+  }
+
+
+
+
