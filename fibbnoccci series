@@ -1,0 +1,10 @@
+def nearest_fibbonacci(n):
+a,b=0,1
+while b<=n:
+    a,b=b,a+b
+if abs(n-a)<=abs(n-b):
+    return a
+else:
+    return b
+n=int(input())
+print(nearest_fibbonacci(n))
